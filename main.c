@@ -1,7 +1,8 @@
 #include "list.h"
 #include <stdio.h>
 #include <stdlib.h>
-int main() {
+
+int main(){
     int data;
     SINODE **head;
     *head = NULL;
@@ -43,3 +44,4 @@ int main() {
     sin_print(current);
     return EXIT_SUCCESS;
 }
+

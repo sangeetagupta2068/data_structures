@@ -1,13 +1,10 @@
-//
-// Created by SANGEETA GUPTA on 2019-09-05.
-//
 # ifndef SI_LIST_H
 # define SI_LIST_H
 
 typedef struct slnode {
-    int data;		// data element
-    struct slnode* next;	// address of next node (if present)
-} SINODE;		// SINODE represents a node of [S]ingle linked list of [I]ntegers
+    int data;
+    struct slnode* next;
+} SINODE;
 
 SINODE* sin_create(int data);
 
@@ -17,9 +14,15 @@ SINODE* sin_insert(SINODE** head, int data, int pos);
 
 int sin_delete(SINODE** head, int pos);
 
+int sin_mid(SINODE** head);
+
 int sin_length(SINODE* head);
 
 int sin_print(SINODE* curr);
+
+void sin_remove(SINODE** head,int start, int end);
+
+void sin_remove_element(SINODE** head, int value);
 
 # endif
 
